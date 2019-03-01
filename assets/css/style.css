@@ -1,0 +1,56 @@
+/*general*/
+body{
+	background-image: url("https://stmed.net/sites/default/files/sailor-moon-wallpapers-26081-9017656.jpg");
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.title{
+	font-weight: bold;
+	color: #F7DFF1;
+	text-align: end;
+	margin-right: 7%;
+}
+
+h4{
+	color: #F7DFF1;
+	text-align: end;
+	margin-right: 5%;
+}
+
+
+#quiz{
+	color: #F7DFF1;
+	text-align: end;
+}
+
+.form-group{
+	color: #F7DFF1;
+	text-align: end;
+	margin-right: 5%;
+}
+
+.responses{
+	color: #F7DFF1;
+	text-align: end;
+	width: 30%;
+}
+
+.radio{
+	color: #F7DFF1;
+
+}
+
+#content{
+	color: #F7DFF1;
+	text-align: end;
+	margin-right: 5%;
+}
+
+#submit-div{
+	color: #F7DFF1;
+	text-align: end;
+	margin-right: 5%;
+}

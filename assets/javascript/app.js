@@ -54,8 +54,8 @@ $(document).ready(function() {
     
     //submit answers
     function submitAns() {
-        $("#submit").on("click", function(e) {
-            e.preventDefault();
+        $("#submit").on("click", function(event) {
+            event.preventDefault();
             userAns.length = 0;
             var userSelection = $("#responses input:radio[name=optionsRadios]:checked").val();
             userAns.push(userSelection);
@@ -168,15 +168,15 @@ $(document).ready(function() {
         clearQ();
         var correctAnswer = questions[questionCounter].choicesAnswer;
         if (userAns[0] == questions[questionCounter].choicesAnswer) {
-            $("#content").append('<h3>'+"Congratulations! You chose the right answer!" + '</h3>');
+            $("#content").append('<h6>'+"Congratulations! You chose the right answer!" + '</h6>');
             correct++;
             displayTimer();
         }else if (userAns[0] === undefined) {
-            $("#content").append('<h3>'+"Time's up!" + '</h3><br><br><h3>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h3>');
+            $("#content").append('<h6>'+"Time's up!" + '</h6><br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h6>');
             missed++;
             displayTimer();
         }else {
-            $("#content").append('<h3>'+"You chose the wrong answer." + '</h3><br><br><h3>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h3>');
+            $("#content").append('<h6>'+"You chose the wrong answer." + '</h6><br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h6>');
             incorrect++;
             displayTimer();
         };

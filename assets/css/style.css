@@ -20,11 +20,10 @@ h4{
 	margin-right: 5%;
 }
 
-
-#quiz{
+.quiz{
 	color: #F7DFF1;
-	text-align: end;
 }
+
 
 .form-group{
 	color: #F7DFF1;
@@ -38,10 +37,6 @@ h4{
 	width: 30%;
 }
 
-.radio{
-	color: #F7DFF1;
-
-}
 
 #content{
 	color: #F7DFF1;

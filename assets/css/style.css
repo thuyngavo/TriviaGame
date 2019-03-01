@@ -7,6 +7,7 @@ body{
 
 }
 
+/*header*/
 .title{
 	font-weight: bold;
 	color: #F7DFF1;
@@ -14,12 +15,14 @@ body{
 	margin-right: 7%;
 }
 
+/*text*/
 h4{
 	color: #F7DFF1;
 	text-align: end;
 	margin-right: 5%;
 }
 
+/*questions and responses*/
 .quiz{
 	color: #F7DFF1;
 	background-color: whitesmoke;
@@ -51,6 +54,7 @@ h4{
 	margin-right: 5%;
 }
 
+/*result images*/
 #img{
 	height: 300px;
 	width: 300px;

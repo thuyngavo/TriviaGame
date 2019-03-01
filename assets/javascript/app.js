@@ -136,7 +136,6 @@ $(document).ready(function() {
         incorrect = 0;
         missed = 0;
         userAns = [];
-        resetTimer();
     };
     
     //results page at end of game

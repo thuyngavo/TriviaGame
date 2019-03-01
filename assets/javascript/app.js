@@ -168,15 +168,15 @@ $(document).ready(function() {
         clearQ();
         var correctAnswer = questions[questionCounter].choicesAnswer;
         if (userAns[0] == questions[questionCounter].choicesAnswer) {
-            $("#content").append('<h5>'+"Congratulations! You chose the right answer!" + '</h5>' + '<br><br>' + '<img id="img" src="assets/images/happy.jpg" />');
+            $("#content").append('<h4>'+"Congratulations! You chose the right answer!" + '</h4>' + '<br><br>' + '<img id="img" src="assets/images/happy.jpg" />');
             correct++;
             displayTimer();
         }else if (userAns[0] === undefined) {
-            $("#content").append('<h5>'+"Time's up!" + '</h5><br><br>' + '<img id="img" src="assets/images/time-up.jpg" />' +'<br><br><h5>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h5>');
+            $("#content").append('<h4>'+"Time's up!" + '</h4><br><br>' + '<img id="img" src="assets/images/time-up.jpg" />' +'<br><br><h4>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h4>');
             missed++;
             displayTimer();
         }else {
-            $("#content").append('<h5>'+"You chose the wrong answer." + '</h5><br><br>' + '<img id="img" src="assets/images/sad.jpg" />' +'<br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h5>');
+            $("#content").append('<h4>'+"You chose the wrong answer." + '</h4><br><br>' + '<img id="img" src="assets/images/sad.jpg" />' +'<br><br><h4>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h4>');
             incorrect++;
             displayTimer();
         };

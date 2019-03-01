@@ -15,43 +15,42 @@ body{
 	margin-right: 7%;
 }
 
+#time-left{
+	text-align: end;
+	margin-right: 7%;
+}
+
 /*text*/
 h4{
 	color: #F7DFF1;
-	text-align: end;
-	margin-right: 5%;
+	text-align: center;
 }
 
 /*questions and responses*/
 .quiz{
 	color: #F7DFF1;
-	background-color: whitesmoke;
 }
 
 
 .form-group{
 	color: #F7DFF1;
-	text-align: end;
-	margin-right: 5%;
+	text-align: center;
 }
 
 .responses{
 	color: #F7DFF1;
-	text-align: end;
-	width: 30%;
+	text-align: center;
 }
 
 
 #content{
 	color: #F7DFF1;
-	text-align: end;
-	margin-right: 5%;
+	text-align: center;
 }
 
 #submit-div{
 	color: #F7DFF1;
-	text-align: end;
-	margin-right: 5%;
+	text-align: center;
 }
 
 /*result images*/

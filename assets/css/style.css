@@ -22,6 +22,7 @@ h4{
 
 .quiz{
 	color: #F7DFF1;
+	background-color: whitesmoke;
 }
 
 
@@ -48,4 +49,9 @@ h4{
 	color: #F7DFF1;
 	text-align: end;
 	margin-right: 5%;
+}
+
+#img{
+	height: 300px;
+	width: 300px;
 }

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //track pages and time
     var questionCounter = 0;
-    var ansTimeout = 1000;
+    var ansTimeout = 2000;
     
     //variables to track score
     var correct = 0;
@@ -89,8 +89,9 @@ $(document).ready(function() {
         $("#time-left").html("Time remaining: " + timeLeft + " seconds");
     };
     
+    //hide timer
     function displayTimer() {
-        $("#time-left").html("Answer Review");
+        $("#time-left").html("");
     };
     
     function stopTimer() {
@@ -168,15 +169,15 @@ $(document).ready(function() {
         clearQ();
         var correctAnswer = questions[questionCounter].choicesAnswer;
         if (userAns[0] == questions[questionCounter].choicesAnswer) {
-            $("#content").append('<h6>'+"Congratulations! You chose the right answer!" + '</h6>');
+            $("#content").append('<h5>'+"Congratulations! You chose the right answer!" + '</h5>' + '<br><br>' + '<img id="img" src="assets/images/happy.jpg" />');
             correct++;
             displayTimer();
         }else if (userAns[0] === undefined) {
-            $("#content").append('<h6>'+"Time's up!" + '</h6><br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h6>');
+            $("#content").append('<h5>'+"Time's up!" + '</h5><br><br>' + '<img id="img" src="assets/images/time-up.jpg" />' +'<br><br><h5>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h5>');
             missed++;
             displayTimer();
         }else {
-            $("#content").append('<h6>'+"You chose the wrong answer." + '</h6><br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h6>');
+            $("#content").append('<h5>'+"You chose the wrong answer." + '</h5><br><br>' + '<img id="img" src="assets/images/sad.jpg" />' +'<br><br><h6>' + "The correct answer was: " + questions[questionCounter].choices[correctAnswer] + '</h5>');
             incorrect++;
             displayTimer();
         };
